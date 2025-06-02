@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cor_icone">
+
+        <!-- HEADER COM BACKGROUND COMPLETO E ÍCONE CENTRALIZADO -->
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/fundo_app"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagem_header_footer"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleX="2.8"
+                android:scaleY="2.8"
+                android:src="@mipmap/icone_ms_tela_principal_foreground"
+                android:layout_centerInParent="true"
+                android:contentDescription="Logo do App"/>
+        </RelativeLayout>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="8dp"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/cor_white"
+                android:gravity="center"
+                android:padding="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="199dp"
+                    android:gravity="center"
+                    android:background="@color/cor_white"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="1dp"
+                    android:weightSum="3">
+
+                    <!-- BOTÃO 1 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="182dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <Button
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/btn_square_shape"
+                            android:drawableTop="@drawable/botao_saude_conecta_drawable"
+                            android:gravity="center"
+                            android:onClick="abrirTelaSaudeConectada"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center"
+                            android:maxLines="3"
+                            android:text="@string/biblioteca_digital_desc"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- BOTÃO 2 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="182dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <Button
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/btn_square_shape"
+                            android:drawableTop="@drawable/botao_consultoria_anonima_drawable"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center"
+                            android:maxLines="5"
+                            android:text="@string/taci_desc"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- BOTÃO 3 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="182dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <Button
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/btn_square_shape"
+                            android:drawableTop="@drawable/botao_busca_saude_drawable"
+                            android:gravity="center"
+                            android:onClick="abrirTelaBuscarSaude" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center"
+                            android:maxLines="3"
+                            android:text="@string/localizador_servicos_desc"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- BOTÃO QUEM SOMOS -->
+        <Button
+            android:id="@+id/btn_quem_somos"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/fundo_app"
+            android:text="Sobre nós"
+            android:textColor="@color/cor_icone"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintTop_toBottomOf="@id/card_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/card_quem_somos" />
+
+        <!-- CARD "QUEM SOMOS" INICIALMENTE INVISÍVEL -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_quem_somos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="8dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_quem_somos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/footer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/fundo_app"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="280dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/sobrenos_mulher_feliz"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_image_background"
+                    android:clipToOutline="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:text="Sobre nós"
+                    android:textAlignment="center"
+                    android:textColor="@color/cor_icone"
+                    android:textStyle="bold"
+                    android:textSize="45sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/stringht_sobre_nos_ptum"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/stringht_sobre_nos_ptdois"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- FOOTER -->
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/imagem_header_footer"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dp"
+                android:src="@mipmap/icone_ms_tela_principal_foreground"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:scaleX="3.0"
+                android:scaleY="3.0"
+                android:contentDescription="Logo da Empresa"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@MED.SINAL"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cor_icone"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/cor_icone"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEDSINAL.PE@GMAIL.COM"
+                    android:textStyle="bold"
+                    android:textColor="@color/cor_icone"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

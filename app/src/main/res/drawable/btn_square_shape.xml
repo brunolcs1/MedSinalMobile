@@ -1,0 +1,9 @@
+<!-- res/drawable/btn_square_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/cor_icone"/>
+    <corners android:radius="18dp"/>
+    <stroke android:width="0dp"/>
+
+</shape>

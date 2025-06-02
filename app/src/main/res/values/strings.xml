@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MedSinal</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        texto 1
+    </string>
+    <string name="sobre_nos">Sobre nós</string>
+    <string name="medsinal">MedSinal</string>
+    <string name="salide_conectada">SALIDE CONECTADA</string>
+    <string name="biblioteca_digital_desc">Biblioteca digital de ISTs e Saúde Sexual</string>
+    <string name="consultoria_anonima">CONSULTORIA ANÓNIMA</string>
+    <string name="taci_desc">Taci, sua assistente virtual em saúde</string>
+    <string name="busca_saude">BUSCA SAÚDE</string>
+    <string name="localizador_servicos_desc">Localizador de serviços de saúde</string>
+    <string name="footer_text">MEDSINAL| MEDSINAL.PE@GMAIL.COM</string>
+    <string name="irei_colocar_mais_conteudos_abaixo">Irei colocar mais conteudos abaixo</string>
+    <string name="stringht_sobre_nos_ptum">Nascemos com a missão de transformar a forma como as pessoas encaram a saúde sexual no Brasil. Em um mundo cada vez mais conectado, a desinformação e o estigma sobre Infecções Sexualmente Transmissíveis (ISTs) ainda são desafios significativos. Diante desse cenário, nossa plataforma surge como um oásis de informação confiável, acessível e humanizada.</string>
+    <string name="stringht_sobre_nos_ptdois">Acreditamos que a educação é a chave para prevenir doenças e promover o bem-estar. Por isso, oferecemos um conteúdo rico e abrangente, elaborado por especialistas em saúde sexual, que aborda desde os conceitos básicos sobre ISTs até os métodos mais eficazes de prevenção. Nosso objetivo é descomplicar a linguagem médica e tornar o conhecimento sobre o assunto acessível a todos.</string>
+
+</resources>

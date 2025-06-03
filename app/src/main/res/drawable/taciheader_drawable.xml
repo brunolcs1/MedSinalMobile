@@ -6,14 +6,13 @@
             <stroke
                 android:width="2dp"
                 android:color="#FF0000"/>
-            <corners android:radius="4dp"/>
         </shape>
     </item>
 
     <item
-        android:drawable="@drawable/header_sifilis"
-        android:width="450dp"
-        android:height="300dp"
+        android:drawable="@drawable/taci_assistente_virtual"
+        android:width="300dp"
+        android:height="400dp"
         android:gravity="center"/>
 
 </layer-list>

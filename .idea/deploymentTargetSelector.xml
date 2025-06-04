@@ -21,7 +21,7 @@
           </targets>
         </DialogSelection>
       </SelectionState>
-      <SelectionState runConfigName="medSinal">
+      <SelectionState runConfigName="ActivityTaci">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

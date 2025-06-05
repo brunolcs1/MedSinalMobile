@@ -117,7 +117,7 @@ Contém os recursos visuais e auxiliares do app:
 - **gradle-wrapper.properties**: Versão do Gradle usada no projeto.
 - **libs.versions.toml**: Catálogo de versões das bibliotecas utilizadas.
 - **local.properties**: Caminho local do Android SDK (**não deve ser versionado**).
-- '**settings.gradle**': Declaração dos módulos do projeto.
+- **settings.gradle**: Declaração dos módulos do projeto.
 
 ---
 
@@ -172,7 +172,7 @@ Contém os recursos visuais e auxiliares do app:
 - `BuscaSaudeActivity`: Busca de locais de saúde  
 - `SaudeConectadaActivity`: Integrações de apoio  
 - Atividades específicas:
-  - `ActivityHepatite`, `ActivityHivAids`, `ActivityHpv`, `ActivitySifilis`, `ActivityHerpes`, `ActivityConorreia`
+`ActivityHepatite`, `ActivityHivAids`, `ActivityHpv`, `ActivitySifilis`, `ActivityHerpes`, `ActivityConorreia`
 - `ActivityTaci`: Assistente virtual
 
 ---

@@ -106,6 +106,21 @@ Contém os recursos visuais e auxiliares do app:
 - values/: Strings, temas, cores, dimensões e estilos.
 - xml/: Arquivos de configuração extra (por exemplo, preferências).
 
+---
+
+## 🔧 Arquivos de Configuração
+
+- **build.gradle (Project)**: Configurações globais do projeto.
+- **build.gradle (Module)**: Dependências e configurações específicas do app.
+- **proguard-rules.pro**: Regras para otimização e ofuscação de código.
+- **gradle.properties**: Parâmetros globais de build.
+- **gradle-wrapper.properties**: Versão do Gradle usada no projeto.
+- **libs.versions.toml**: Catálogo de versões das bibliotecas utilizadas.
+- **local.properties**: Caminho local do Android SDK (**não deve ser versionado**).
+- **settings.gradle**: Declaração dos módulos do projeto.
+
+---
+
 ## ⚙️ Configuração e Execução
 
 ### Pré-requisitos

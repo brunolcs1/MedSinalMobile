@@ -133,7 +133,7 @@ Contém os recursos visuais e auxiliares do app:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/usuario/repositorio.git
+   git clone https://github.com/usuario/MedSinalMobile.git
    ```
 
 2. Navegue até o diretório do projeto:

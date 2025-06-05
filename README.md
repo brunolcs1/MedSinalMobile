@@ -171,8 +171,7 @@ Contém os recursos visuais e auxiliares do app:
 - `MainActivity`: Tela inicial  
 - `BuscaSaudeActivity`: Busca de locais de saúde  
 - `SaudeConectadaActivity`: Integrações de apoio  
-- Atividades específicas:
-`ActivityHepatite`, `ActivityHivAids`, `ActivityHpv`, `ActivitySifilis`, `ActivityHerpes`, `ActivityConorreia`
+- `ActivityHepatite`, `ActivityHivAids`, `ActivityHpv`, `ActivitySifilis`, `ActivityHerpes`, `ActivityConorreia`: Atividades específicas
 - `ActivityTaci`: Assistente virtual
 
 ---
